@@ -3737,6 +3737,9 @@ a.text-theme:hover,
 .main-menu > ul > li {
   margin: 0 18px;
 }
+.main-menu > ul > li > a {
+  padding: 15px 0;
+}
 .main-menu > ul > li > a .new-label {
   position: absolute;
   top: -10px;
@@ -3919,52 +3922,6 @@ a.text-theme:hover,
   font-family: var(--icon-font);
   font-weight: 400;
   margin: 0 10px 0 0;
-}
-
-.menu-style1 > ul > li > a {
-  padding: 16.5px 0;
-}
-
-.menu-style2 > ul > li > a {
-  padding: 41.5px 0;
-}
-
-.menu-style3 > ul > li > a {
-  padding: 45px 0;
-}
-
-.menu-style4 > ul > li > a {
-  padding: 49.5px 0;
-  position: relative;
-}
-.menu-style4 > ul > li > a:before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  background-color: var(--theme-color);
-  width: 100%;
-  height: 2px;
-  transition: all ease 0.4s;
-  transform: scale(0);
-  opacity: 0;
-  visibility: hidden;
-}
-.menu-style4 > ul > li > a:hover:before {
-  transform: scale(1);
-  opacity: 1;
-  visibility: visible;
-}
-
-.menu-style5 > ul > li {
-  margin: 0 13px;
-}
-.menu-style5 > ul > li > a {
-  padding: 51.5px 0;
-}
-.menu-style5 > ul > li:hover ul.mega-menu,
-.menu-style5 > ul > li:hover ul.sub-menu {
-  margin-top: -1px;
 }
 
 .header-text {

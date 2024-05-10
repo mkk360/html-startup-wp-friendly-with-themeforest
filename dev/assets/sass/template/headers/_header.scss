@@ -33,11 +33,11 @@
     }
   }
 
-  > ul {
-    > li {
+  & > ul {
+    & > li {
       margin: 0 18px;
-
-      > a {
+      & > a {
+        padding: 15px 0;
         .new-label {
           position: absolute;
           top: -10px;
@@ -267,88 +267,6 @@
               margin: 0 10px 0 0;
             }
           }
-        }
-      }
-    }
-  }
-}
-
-.menu-style1 {
-  > ul {
-    > li {
-      > a {
-        padding: 16.5px 0;
-      }
-    }
-  }
-}
-
-.menu-style2 {
-  > ul {
-    > li {
-      > a {
-        padding: 41.5px 0;
-      }
-    }
-  }
-}
-
-.menu-style3 {
-  > ul {
-    > li {
-      > a {
-        padding: 45px 0;
-      }
-    }
-  }
-}
-
-.menu-style4 {
-  > ul {
-    > li {
-      > a {
-        padding: 49.5px 0;
-        position: relative;
-
-        &:before {
-          content: "";
-          position: absolute;
-          bottom: 0;
-          left: 0;
-          background-color: $theme-color;
-          width: 100%;
-          height: 2px;
-          transition: all ease 0.4s;
-          transform: scale(0);
-          opacity: 0;
-          visibility: hidden;
-        }
-
-        &:hover {
-          &:before {
-            transform: scale(1);
-            opacity: 1;
-            visibility: visible;
-          }
-        }
-      }
-    }
-  }
-}
-
-.menu-style5 {
-  > ul {
-    > li {
-      margin: 0 13px;
-
-      > a {
-        padding: 51.5px 0;
-      }
-
-      &:hover {
-        ul.mega-menu,
-        ul.sub-menu {
-          margin-top: -1px;
         }
       }
     }
