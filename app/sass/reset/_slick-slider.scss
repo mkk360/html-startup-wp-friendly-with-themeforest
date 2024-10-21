@@ -11,6 +11,11 @@
   min-width: 100%;
 }
 
+.slick-list.draggable {
+    padding-right: 0;
+    padding-left: 0;
+}
+
 .slick-slide img {
   display: inline-block;
 }
