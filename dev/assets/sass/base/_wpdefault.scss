@@ -15,7 +15,7 @@ p.has-drop-cap {
 .blocks-gallery-caption,
 .wp-block-embed figcaption,
 .wp-block-image figcaption {
-  color: $body-color;
+  color: $vs-body-color;
 }
 
 .bypostauthor,
@@ -127,7 +127,7 @@ figure.wp-block-gallery {
 .gallery-caption {
   display: block;
   font-size: 12px;
-  color: var(--body-color);
+  color: var(--vs-body-color);
   line-height: 1.5;
   padding: 0.5em 0;
 }
@@ -135,7 +135,7 @@ figure.wp-block-gallery {
 .wp-block-cover p:not(.has-text-color),
 .wp-block-cover-image-text,
 .wp-block-cover-text {
-  color: $white-color;
+  color: $vs-white-color;
 }
 
 .wp-block-cover {
@@ -163,7 +163,7 @@ figure.wp-block-gallery {
 }
 
 .wp-block-media-text.alignwide {
-  background-color: $smoke-color;
+  background-color: $vs-smoke-color;
 }
 
 .editor-styles-wrapper .has-large-font-size,
@@ -187,20 +187,20 @@ figure.wp-block-gallery {
 
     &:hover {
       color: #fff;
-      background-color: $theme-color;
+      background-color: $vs-theme-color1;
     }
   }
 
   &.is-style-outline {
     .wp-block-button__link {
       background-color: transparent;
-      border-color: $title-color;
-      color: $title-color;
+      border-color: $vs-title-color;
+      color: $vs-title-color;
 
       &:hover {
         color: #fff;
-        background-color: $theme-color;
-        border-color: $theme-color;
+        background-color: $vs-theme-color1;
+        border-color: $vs-theme-color1;
       }
     }
   }
@@ -225,7 +225,7 @@ ul.wp-block-latest-posts {
     color: inherit;
 
     &:hover {
-      color: $theme-color;
+      color: $vs-theme-color1;
     }
   }
 
@@ -253,10 +253,10 @@ ul.wp-block-latest-posts {
     border: none;
     height: 50px;
     color: #fff;
-    background-color: $theme-color;
+    background-color: $vs-theme-color1;
 
     &:hover {
-      background-color: $title-color;
+      background-color: $vs-title-color;
       opacity: 0.8;
     }
   }
@@ -317,10 +317,10 @@ ul.wp-block-rss a {
     border: none;
     height: 50px;
     color: #fff;
-    background-color: $theme-color;
+    background-color: $vs-theme-color1;
 
     &:hover {
-      background-color: $title-color;
+      background-color: $vs-title-color;
       opacity: 0.8;
     }
   }
@@ -339,21 +339,21 @@ ul.wp-block-rss a {
   > a {
     display: inline-block;
     padding: 5px 13px;
-    background-color: $white-color;
-    color: $title-color;
+    background-color: $vs-white-color;
+    color: $vs-title-color;
     border: 1px solid rgba($color: #000000, $alpha: 0.08);
     margin-right: 10px;
 
     &:hover {
       opacity: 0.8;
-      color: $white-color;
-      background-color: $theme-color;
+      color: $vs-white-color;
+      background-color: $vs-theme-color1;
       border-color: transparent;
     }
 
     &.current {
-      background-color: $theme-color;
-      color: $white-color;
+      background-color: $vs-theme-color1;
+      color: $vs-white-color;
       border-color: transparent;
     }
   }
@@ -376,7 +376,7 @@ ul.wp-block-rss a {
     position: relative;
 
     .blog-content {
-      background-color: $smoke-color;
+      background-color: $vs-smoke-color;
       padding: 40px;
       border: none;
 
@@ -386,15 +386,15 @@ ul.wp-block-rss a {
     }
 
     &:before {
-      content: "\f0c1";
+      content: '\f0c1';
       position: absolute;
-      font-family: "Font Awesome 5 Pro";
+      font-family: 'Font Awesome 5 Pro';
       font-size: 5rem;
       opacity: 0.3;
       right: 15px;
       line-height: 1;
       top: 15px;
-      color: $theme-color;
+      color: $vs-theme-color1;
       z-index: 1;
     }
   }
@@ -402,13 +402,13 @@ ul.wp-block-rss a {
   &.tag-sticky-2,
   &.sticky {
     &::before {
-      content: "Featured";
+      content: 'Featured';
       right: 0;
       top: 0;
       font-size: 18px;
-      color: $white-color;
-      background-color: $theme-color;
-      font-family: $title-font;
+      color: $vs-white-color;
+      background-color: $vs-theme-color1;
+      font-family: $vs-title-font;
       opacity: 1;
       text-transform: capitalize;
       padding: 10px 23px;
@@ -418,7 +418,7 @@ ul.wp-block-rss a {
 
   &.format-quote {
     &:before {
-      content: "\f10e";
+      content: '\f10e';
     }
   }
 
@@ -448,7 +448,7 @@ ul.wp-block-rss a {
       }
 
       .blog-content > p:nth-child(2n) {
-        background: $smoke-color;
+        background: $vs-smoke-color;
         padding: 5px 20px;
       }
     }
@@ -490,7 +490,7 @@ ul.wp-block-rss a {
       color: inherit;
 
       &:hover {
-        color: $theme-color;
+        color: $vs-theme-color1;
       }
     }
   }
@@ -508,7 +508,7 @@ ul.wp-block-rss a {
 
     a,
     span {
-      color: $body-color;
+      color: $vs-body-color;
     }
   }
 }

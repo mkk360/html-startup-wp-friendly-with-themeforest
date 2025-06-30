@@ -10,11 +10,21 @@ const del = require("del");
 const gulpif = require("gulp-if");
 const sourcemaps = require("gulp-sourcemaps");
 const concat = require("gulp-concat");
-const imagemin = require("gulp-imagemin");
 const changed = require("gulp-changed");
+let imageminMozjpeg, imageminOptipng, imageminGifsicle;
+(async function() {
+  imageminMozjpeg = (await import('imagemin-mozjpeg')).default;
+  imageminOptipng = (await import('imagemin-optipng')).default;
+  imageminGifsicle = (await import('imagemin-gifsicle')).default;
+})();
 const rename = require("gulp-rename");
 const uglify = require("gulp-uglify");
 const beautify = require("gulp-beautify-code");
+
+let imagemin;
+(async function() {
+  imagemin = (await import('gulp-imagemin')).default;
+})();
 const notify = require("gulp-notify");
 const plumber = require("gulp-plumber");
 const purgecss = require("gulp-purgecss");
@@ -211,9 +221,9 @@ function imgmin() {
       gulpif(
         minImg,
         imagemin([
-          imagemin.gifsicle({ interlaced: true }),
-          imagemin.jpegtran({ progressive: true }),
-          imagemin.optipng({ optimizationLevel: 5 }),
+          imageminGifsicle({ interlaced: true }),
+          imageminMozjpeg({ quality: 75, progressive: true }),
+          imageminOptipng({ optimizationLevel: 5 })
         ])
       )
     )

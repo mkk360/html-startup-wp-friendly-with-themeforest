@@ -1,6 +1,6 @@
 .widget {
   padding: var(--widget-padding-y, 40px) var(--widget-padding-x, 40px);
-  background-color: $smoke-color;
+  background-color: $vs-smoke-color;
   position: relative;
   margin-bottom: 40px;
   border: 6px;
@@ -21,13 +21,13 @@
   font-weight: 700;
   line-height: 1em;
   margin: -0.07em 0 35px 0;
-  font-family: $title-font;
+  font-family: $vs-title-font;
 }
 
 .widget {
   .search-form {
     position: relative;
-    display: flex;    
+    display: flex;
 
     input {
       flex: 1;
@@ -35,16 +35,16 @@
 
     button {
       border: none;
-      background-color: $theme-color;
-      color: $white-color;
+      background-color: $vs-theme-color1;
+      color: $vs-white-color;
       height: 55px;
       width: 55px;
       line-height: 55px;
       font-size: 17px;
 
       &:hover {
-        background-color: $title-color;
-        color: $white-color;
+        background-color: $vs-title-color;
+        color: $vs-white-color;
       }
     }
   }
@@ -61,13 +61,13 @@
     padding: 9.5px 16.5px;
     margin-right: 5px;
     margin-bottom: 10px;
-    color: $title-color;
-    background-color: $smoke-color;
+    color: $vs-title-color;
+    background-color: $vs-smoke-color;
     border-radius: 4px;
 
     &:hover {
-      background-color: $theme-color;
-      color: $white-color !important;
+      background-color: $vs-theme-color1;
+      color: $vs-white-color !important;
     }
   }
 }
@@ -77,8 +77,8 @@
   margin-bottom: -10px;
 
   a {
-    background-color: $white-color;
-    color: $title-color;
+    background-color: $vs-white-color;
+    color: $vs-title-color;
   }
 }
 
@@ -111,16 +111,15 @@
   }
 
   .recent-post-meta {
-
     a {
       text-transform: capitalize;
       font-size: 14px;
       font-weight: 400;
-      color: $body-color;
+      color: $vs-body-color;
 
       i {
         margin-right: 5px;
-        color: $theme-color
+        color: $vs-theme-color1;
       }
     }
   }
@@ -134,7 +133,6 @@
   }
 }
 
-
 .wp-block-calendar,
 .calendar_wrap {
   position: relative;
@@ -142,12 +140,12 @@
   padding-bottom: 0;
   border: none;
 
-  span[class*="wp-calendar-nav"] {
+  span[class*='wp-calendar-nav'] {
     position: absolute;
     top: 8px;
     left: 20px;
     font-size: 14px;
-    color: $title-color;
+    color: $vs-title-color;
     font-weight: 500;
     z-index: 1;
 
@@ -155,7 +153,6 @@
       color: inherit;
     }
   }
-
 
   span.wp-calendar-nav-next {
     left: auto;
@@ -165,7 +162,7 @@
   caption {
     caption-side: top;
     text-align: center;
-    color: $title-color;
+    color: $vs-title-color;
     background-color: #f1dbbe;
   }
 
@@ -183,7 +180,6 @@
     }
   }
 
-
   td {
     font-size: 14px;
     padding: 5px;
@@ -195,8 +191,8 @@
   }
 
   #today {
-    color: $theme-color;
-    background-color: $white-color;
+    color: $vs-theme-color1;
+    background-color: $vs-white-color;
     border-color: #ededed;
   }
 
@@ -208,13 +204,11 @@
     margin-bottom: 0;
   }
 
-
   .wp-calendar-nav {
     .pad {
       display: none;
     }
   }
-
 }
 
 .sidebar-gallery {
@@ -251,7 +245,7 @@
 
   .mini_cart_item {
     position: relative;
-    border-bottom: 1px solid $border-color;
+    border-bottom: 1px solid $vs-border-color;
     padding: 0 0 32px 110px;
     margin: 0 0 27px 0;
     min-height: 90px;
@@ -261,12 +255,12 @@
     position: absolute;
     right: 0;
     top: 0;
-    color: $title-color;
+    color: $vs-title-color;
     line-height: 1;
     font-size: 18px;
 
     &:hover {
-      color: $theme-color;
+      color: $vs-theme-color1;
     }
   }
 
@@ -277,12 +271,12 @@
     width: 90px;
     height: 90px;
     display: inline-block;
-    border: 1px solid $border-color;
+    border: 1px solid $vs-border-color;
   }
 
   .product-title {
     font-size: 14px;
-    color: $title-color;
+    color: $vs-title-color;
     font-weight: 400;
     margin-bottom: 0;
     display: inline-block;
@@ -291,7 +285,7 @@
   .amount {
     display: block;
     font-weight: 600;
-    color: $title-color;
+    color: $vs-title-color;
     font-size: 16px;
   }
 
@@ -301,7 +295,7 @@
   }
 
   .qut-btn {
-    border: 1px solid $border-color;
+    border: 1px solid $vs-border-color;
     background-color: transparent;
     display: inline-block;
     background-color: transparent;
@@ -313,14 +307,14 @@
     position: relative;
 
     &:hover {
-      background-color: $title-color;
+      background-color: $vs-title-color;
       border-color: transparent;
-      color: $white-color;
+      color: $vs-white-color;
     }
   }
 
   .qty-input {
-    border: 1px solid $border-color;
+    border: 1px solid $vs-border-color;
     text-align: center;
     width: max-content;
     min-width: 40px;
@@ -336,8 +330,8 @@
     font-size: 12px;
     margin-top: 19px;
 
-    >span:not(.amount) {
-      color: $body-color;
+    > span:not(.amount) {
+      color: $vs-body-color;
       font-weight: 300;
     }
 
@@ -348,7 +342,7 @@
   }
 
   .total {
-    color: $title-color;
+    color: $vs-title-color;
     text-transform: uppercase;
     line-height: 1;
     margin-bottom: 25px;
@@ -357,32 +351,31 @@
     .amount {
       font-size: inherit;
       display: inline-block;
-      color: $theme-color;
+      color: $vs-theme-color1;
     }
   }
 
   .vs-btn {
-    border: 1px solid $title-color;
-    color: $title-color;
+    border: 1px solid $vs-title-color;
+    color: $vs-title-color;
     margin-right: 10px;
     text-transform: capitalize;
     height: 50px;
     line-height: 47px;
     padding: 0 35px;
-    background-color: $title-color;
-    color: $white-color;
+    background-color: $vs-title-color;
+    color: $vs-white-color;
     font-weight: 400;
 
     &:hover {
       background-color: transparent;
-      color: $title-color;
+      color: $vs-title-color;
     }
   }
 
   .buttons {
     margin: 0;
   }
-
 }
 
 .sidebar-area {
@@ -439,7 +432,6 @@
   }
 }
 
-
 .recent-product {
   display: flex;
 
@@ -456,10 +448,10 @@
   }
 
   li {
-    background-color: $white-color;
+    background-color: $vs-white-color;
     padding: 14.5px 20px;
     margin: 0 0 15px 0;
-    font-family: $title-font;
+    font-family: $vs-title-font;
     font-weight: 500;
 
     &:last-child {
@@ -477,7 +469,7 @@
   text-align: center;
   padding: 80px 30px;
   margin: 0 0 30px 0;
-  
+
   &:before {
     content: '';
     position: absolute;
@@ -485,11 +477,11 @@
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(#071A3E, 0.70);
+    background-color: rgba(#071a3e, 0.7);
   }
-  
+
   &__title {
-    color: $white-color;
+    color: $vs-white-color;
     position: relative;
     z-index: 1;
     max-width: 200px;
@@ -525,10 +517,7 @@
       font-size: 14px;
     }
   }
-
-  
 }
-
 
 @include md {
   .sidebar-area {
@@ -545,7 +534,7 @@
   .contact-widget {
     .icon {
       --icon-size: 30px;
-      --icon-font-size: 12px;
+      --vs-icon-font-size: 12px;
       top: 5px;
     }
 

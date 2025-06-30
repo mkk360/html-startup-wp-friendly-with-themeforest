@@ -18,7 +18,7 @@
   &.widget_archive,
   &.widget_categories,
   &.widget_nav_menu {
-    margin-bottom: 40px;    
+    margin-bottom: 40px;
 
     a {
       width: max-content;
@@ -32,7 +32,7 @@
 
       &:hover {
         background-color: transparent;
-        color: $theme-color;
+        color: $vs-theme-color1;
       }
 
       &:before {
@@ -41,11 +41,11 @@
     }
 
     li {
-      >span {
+      > span {
         @include equal-size(auto);
         position: relative;
         background-color: transparent;
-        color: $body-color;
+        color: $vs-body-color;
         line-height: 1;
       }
 
@@ -57,8 +57,8 @@
     }
   }
 
-  .footer-links {    
-    >ul {
+  .footer-links {
+    > ul {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
     }
@@ -67,7 +67,6 @@
       margin-bottom: 21px;
     }
   }
-
 }
 
 .footer-logo {
@@ -85,7 +84,7 @@
   &_group {
     display: flex;
     justify-content: center;
-    border-right: 1px solid #152B54;
+    border-right: 1px solid #152b54;
     padding: 60px 0 60px 0;
 
     &:last-child {
@@ -97,7 +96,7 @@
 
       .footer-info_icon {
         background-color: transparent;
-        border: 1px solid #35496F;
+        border: 1px solid #35496f;
       }
     }
   }
@@ -107,8 +106,8 @@
     height: 85px;
     line-height: 85px;
     text-align: center;
-    background-color: #152B54;
-    color: $white-color;
+    background-color: #152b54;
+    color: $vs-white-color;
     font-size: 30px;
     margin: 0 25px 0 0;
     display: inline-block;
@@ -116,10 +115,10 @@
   }
 
   &_label {
-    color: $white-color;
+    color: $vs-white-color;
     font-size: 16px;
     font-weight: 600;
-    font-family: $title-font;
+    font-family: $vs-title-font;
     text-transform: uppercase;
     display: block;
     margin: 0 0 5px 0;
@@ -127,22 +126,21 @@
 
   &_link {
     max-width: 190px;
-    color: #8A99B4;
+    color: #8a99b4;
     margin: 0 0 -0.15em 0;
 
     a {
       color: inherit;
 
       &:hover {
-        color: $theme-color;
+        color: $vs-theme-color1;
       }
     }
   }
 }
 
-
 .footer-number {
-  border-top: 1px solid #14284F;
+  border-top: 1px solid #14284f;
   padding: 43px 0 0 0;
   margin: 34px 0 0 0;
   position: relative;
@@ -158,16 +156,16 @@
   }
 
   .info {
-    color: $body-color;
+    color: $vs-body-color;
     margin: 0;
     line-height: 1;
     display: inline-block;
 
     &:hover {
-      color: $theme-color;
+      color: $vs-theme-color1;
     }
   }
-  
+
   .title {
     margin: 0 0 7px 0;
   }
@@ -176,7 +174,7 @@
 .footer-map {
   max-width: 400px;
   width: 100%;
-  
+
   frame {
     max-width: 100%;
   }
@@ -184,8 +182,8 @@
 
 .footer-social {
   .social-title {
-    font-family: $title-font;
-    color: $title-color;
+    font-family: $vs-title-font;
+    color: $vs-title-color;
     font-size: 20px;
     display: inline-block;
     margin-right: 20px;
@@ -199,8 +197,8 @@
     line-height: 45px;
     font-size: 16px;
     margin: 0 5px 0 0;
-    color: $white-color;
-    background-color: #15284C;
+    color: $vs-white-color;
+    background-color: #15284c;
     text-align: center;
     border-radius: 5px;
 
@@ -209,22 +207,22 @@
     }
 
     &:hover {
-      background-color: $theme-color;
-      color: $white-color;
+      background-color: $vs-theme-color1;
+      color: $vs-white-color;
     }
   }
 
   &.style2 {
     a {
-      background-color: $white-color;
+      background-color: $vs-white-color;
       outline: 2px solid #e7e8ec;
       outline-offset: -2px;
-      color: $body-color;
+      color: $vs-body-color;
       box-shadow: 8px 13.856px 30px 0px rgba(132, 137, 154, 0.1);
 
       &:hover {
-        background-color: $theme-color;
-        color: $white-color;
+        background-color: $vs-theme-color1;
+        color: $vs-white-color;
         outline-color: transparent;
       }
     }
@@ -233,17 +231,17 @@
 
 .footer-newsletter {
   display: flex;
-  
+
   input {
     background-color: transparent;
     border-radius: 5px 0 0 5px;
-    border: 1px solid #14284F;
+    border: 1px solid #14284f;
     height: 55px;
-    color: $white-color;
+    color: $vs-white-color;
     flex: 1;
 
     @include inputPlaceholder {
-      color: $white-color;
+      color: $vs-white-color;
     }
   }
 
@@ -251,8 +249,8 @@
     border-radius: 0 5px 5px 0;
 
     &:hover {
-      background-color: $theme-color;
-      color: $white-color;
+      background-color: $vs-theme-color1;
+      color: $vs-white-color;
     }
 
     &:after,
@@ -261,7 +259,6 @@
     }
   }
 }
-
 
 .footer-schedule {
   table {
@@ -272,18 +269,17 @@
   th,
   td {
     padding: 0 0 10px 0;
-    color: $body-color;
+    color: $vs-body-color;
     border: none;
     font-weight: 400;
   }
 }
 
-
 .footer-number1 {
   font-size: 30px;
   font-weight: 700;
-  color: $body-color;
-  font-family: $title-font;
+  color: $vs-body-color;
+  font-family: $vs-title-font;
   margin-bottom: 25px;
   display: block;
   width: max-content;
@@ -294,22 +290,21 @@
   padding-left: 25px;
   position: relative;
 
-  >i:first-child {
+  > i:first-child {
     position: absolute;
     left: 0;
     top: 4px;
   }
 }
 
-
 .footer-address1 {
   max-width: 250px;
 }
 
 .footer-mail1 {
-  color: $body-color;
+  color: $vs-body-color;
   text-decoration: underline;
-  
+
   i:first-child {
     top: 2px;
   }
@@ -317,7 +312,7 @@
 
 .footer-info-list {
   margin: 35px 0 22px 0;
-  
+
   .info {
     position: relative;
     margin-bottom: 21px;
@@ -328,24 +323,22 @@
       position: absolute;
       left: 0;
       top: 4px;
-      color: $theme-color;
+      color: $vs-theme-color1;
     }
 
     a {
       @extend .text-inherit;
     }
   }
-
-
 }
-  
+
 .newsletter-form2 {
-  .form_text{
+  .form_text {
     margin: -0.3em 0 22px 0;
     display: block;
     max-width: 300px;
   }
-  
+
   input {
     background-color: #ebecf1;
     margin-bottom: 15px;
@@ -364,7 +357,7 @@
   }
 }
 
-@include lg{
+@include lg {
   .footer-widget {
     margin-bottom: 40px;
 
@@ -381,7 +374,7 @@
   .footer-info {
     display: block;
     text-align: center;
-    
+
     &_icon {
       margin: 0 0 20px 0;
     }
@@ -392,7 +385,6 @@
     }
   }
 }
-
 
 @media (min-width: $md) and (max-width: $ml) {
   .footer-newsletter {
@@ -437,8 +429,6 @@
     font-size: 14px;
   }
 
-  
-
   .footer-newsletter {
     display: block;
 
@@ -451,5 +441,4 @@
       border-radius: 5px;
     }
   }
-
 }

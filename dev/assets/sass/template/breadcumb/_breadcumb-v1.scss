@@ -10,7 +10,7 @@
     position: relative;
 
     &:after {
-      content: '/';      
+      content: '/';
       position: relative;
       margin: 0 5px 0 10px;
     }
@@ -19,13 +19,13 @@
       &:after {
         display: none;
       }
-    }  
-    
+    }
+
     // &:last-child {
     //   &,
     //   a,
     //   span {
-    //     color: $theme-color;
+    //     color: $vs-theme-color1;
     //   }
     // }
   }
@@ -38,19 +38,17 @@
     word-break: break-word;
     font-weight: 500;
     font-size: 16px;
-    font-family: $title-font;
-    color: $white-color;   
+    font-family: $vs-title-font;
+    color: $vs-white-color;
   }
 }
 
-
 .breadcumb-title {
-  color: $white-color;
+  color: $vs-white-color;
   margin: -0.3em 0 -0.35em 0;
   max-width: 60%;
   width: 100%;
 }
-
 
 .breadcumb-content {
   display: flex;
@@ -62,14 +60,13 @@
 .breadcumb-wrapper {
   padding-top: 140px;
   padding-bottom: 135px;
-  background-color: $title-color;
+  background-color: $vs-title-color;
 
   @include md {
     padding-top: 100px;
     padding-bottom: 100px;
   }
 }
-
 
 @include md {
   .breadcumb-content {

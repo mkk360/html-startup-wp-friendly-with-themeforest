@@ -7,6 +7,12 @@
 .bg-gray {
   background-color: #e5e5e5;
 }
+.bg-title {
+  background-color: var(--vs-title-color);
+}
+.bg-theme-color-1 {
+  background-color: var(--vs-theme-color1);
+}
 
 .background-image,
 [data-bg-src] {

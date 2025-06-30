@@ -70,157 +70,173 @@ Version: 1.0.0
    01. Theme Base
 ==================================*/
 /*------------------- 1.1. Mixin -------------------*/
-@import "base/mixin";
+@import 'base/mixin';
 
 /*------------------- 1.2. Function -------------------*/
-@import "base/function";
+@import 'base/function';
 
 /*------------------- 1.3. Variable-------------------*/
-@import "base/variable";
+@import 'base/variable';
 
 /*------------------- 1.5. Reset -------------------*/
-@import "base/reset";
+@import 'base/reset';
 
 /*------------------- 1.6. Responsive -------------------*/
-@import "base/responsive";
+@import 'base/responsive';
 
 /*------------------- 1.7. Wordpress Default -------------------*/
-@import "base/wpdefault";
+@import 'base/wpdefault';
 
 /*=================================
     02. Reset
 ==================================*/
 /*------------------- 2.1. Container -------------------*/
-@import "reset/container";
+@import 'reset/container';
 
 /*------------------- 2.2. Grid -------------------*/
-@import "reset/grid";
+@import 'reset/grid';
 
 /*------------------- 2.3. Input -------------------*/
-@import "reset/input";
+@import 'reset/input';
 
 /*------------------- 2.4. Slick Slider -------------------*/
-@import "reset/slick-slider";
+@import 'reset/slick-slider';
 
 /*------------------- 2.5. Mobile Menu -------------------*/
-@import "reset/vsmenu";
+@import 'reset/vsmenu';
 
 /*=================================
     03. Utilities
 ==================================*/
 /*------------------- 3.1. Preloader -------------------*/
-@import "utilities/preloader";
+@import 'utilities/preloader';
 
 /*------------------- 3.2. Buttons -------------------*/
-@import "utilities/btns";
+@import 'utilities/btns';
 
 /*------------------- 3.3. Titles -------------------*/
-@import "utilities/titles";
+@import 'utilities/titles';
 
 /*------------------- 3.4. Common -------------------*/
-@import "utilities/common";
+@import 'utilities/common';
 
 /*------------------- 3.6. Font -------------------*/
-@import "utilities/font";
+@import 'utilities/font';
 
 /*------------------- 3.7. Background -------------------*/
-@import "utilities/background";
+@import 'utilities/background';
 
 /*------------------- 3.8. Text Color -------------------*/
-@import "utilities/text-color";
+@import 'utilities/text-color';
 
 /*------------------- 3.9. Overlay -------------------*/
-@import "utilities/overlay";
+@import 'utilities/overlay';
 
 /*------------------- 3.10. Animation -------------------*/
-@import "utilities/animation";
+@import 'utilities/animation';
+
+/*------------------- 3.10. Animation -------------------*/
+@import 'utilities/icons';
+
+/*------------------- 3.10. Animation -------------------*/
+@import 'utilities/social';
+
+/*------------------- 3.10. Animation -------------------*/
+@import 'utilities/sticky';
 
 /*=================================
     04. Template Style
 ==================================*/
 /*------------------- 4.1. Widget  -------------------*/
-@import "template/widgets/widget-default-list";
-@import "template/widgets/widget-sidebar";
-@import "template/widgets/widget-footer";
+@import 'template/widgets/widget-default-list';
+@import 'template/widgets/widget-sidebar';
+@import 'template/widgets/widget-footer';
+@import 'template/widgets/gallery';
 
 /*------------------- 4.2. Header  -------------------*/
-@import "template/headers/header";
+@import 'template/headers/header';
+@import 'template/headers/navigation';
 
 /*------------------- 4.3. Footer  -------------------*/
-@import "template/footers/footer";
+@import 'template/footers/footer';
 
 /*------------------- 4.4. Breadcumb  -------------------*/
-@import "template/breadcumb/breadcumb-v1";
+@import 'template/breadcumb/breadcumb-v1';
 
 /*------------------- 4.5. Pagination  -------------------*/
-@import "template/sections/pagination-v1";
+@import 'template/sections/pagination-v1';
 
 /*------------------- 4.6. Blog  -------------------*/
-@import "template/sections/blog";
+@import 'template/sections/blog';
 
 /*------------------- 4.7. Comments  -------------------*/
-@import "template/sections/comments";
+@import 'template/sections/comments';
 
 /*------------------- 4.8. Hero Area  -------------------*/
-@import "template/sections/hero";
+@import 'template/sections/hero';
 
 /*------------------- 4.9. Error  -------------------*/
-@import "template/sections/error";
+@import 'template/sections/error';
 
 /*------------------- 4.10. Feature  -------------------*/
-@import "template/sections/feature";
+@import 'template/sections/feature';
 
 /*------------------- 4.11. About  -------------------*/
-@import "template/sections/about";
+@import 'template/sections/about';
 
 /*------------------- 4.12. Service  -------------------*/
-@import "template/sections/service";
+@import 'template/sections/service';
 
 /*------------------- 4.13. Counter  -------------------*/
-@import "template/sections/counter";
+@import 'template/sections/counter';
 
 /*------------------- 4.14. Team  -------------------*/
-@import "template/sections/team";
+@import 'template/sections/team';
 
 /*------------------- 4.15. Process  -------------------*/
-@import "template/sections/process";
+@import 'template/sections/process';
 
 /*------------------- 4.16. Accordion  -------------------*/
-@import "template/sections/accordion";
+@import 'template/sections/accordion';
 
 /*------------------- 4.17. Simple Sections  -------------------*/
-@import "template/sections/simple-sections";
+@import 'template/sections/simple-sections';
 
 /*------------------- 4.18. Testimonial  -------------------*/
-@import "template/sections/testimonoial";
+@import 'template/sections/testimonoial';
 
 /*------------------- 4.19. Popup Side Menu  -------------------*/
-@import "template/sections/sidemenu-v1";
+@import 'template/sections/sidemenu-v1';
 
 /*------------------- 4.20. Price Plan  -------------------*/
-@import "template/sections/price-plan";
+@import 'template/sections/price-plan';
 
 /*------------------- 4.21. Forms Style  -------------------*/
-@import "template/sections/forms";
+@import 'template/sections/forms';
 
 /*------------------- 4.22. Projects  -------------------*/
-@import "template/sections/project";
+@import 'template/sections/project';
 
 /*------------------- 4.23. Contact  -------------------*/
-@import "template/sections/contact";
+@import 'template/sections/contact';
 
 /*------------------- 4.24. Event  -------------------*/
-@import "template/sections/event";
+@import 'template/sections/event';
 
 /*------------------- 4.25. CTA  -------------------*/
-@import "template/sections/cta";
+@import 'template/sections/cta';
 
 /*=================================
     05. Spacing
 ==================================*/
-@import "spacing/spacing";
+@import 'spacing/spacing';
+
+/*=================================
+    06. Components
+==================================*/
+@import 'components/icon-call';
 
 /*=================================
     06. Color Plate
 ==================================*/
-@import "base/color-plate";
+@import 'base/color-plate';

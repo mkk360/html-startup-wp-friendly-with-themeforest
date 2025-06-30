@@ -1,49 +1,59 @@
 :root {
-  --theme-color: #0e5af2;
-  --title-color: #1a1a1a;
-  --body-color: #878d97;
-  --smoke-color: #eff1f5;
-  --secondary-color: #eef2fb;
-  --black-color: #000000;
-  --white-color: #ffffff;
-  --yellow-color: #fec624;
-  --success-color: #28a745;
-  --error-color: #dc3545;
-  --border-color: #e0e0e0;
-  --title-font: "Exo", sans-serif;
-  --body-font: "Fira Sans", sans-serif;
-  --icon-font: "Font Awesome 5 Pro";
-  --main-container: 1220px;
-  --container-gutters: 30px;
-  --section-space: 120px;
-  --section-space-mobile: 80px;
-  --section-title-space: 80px;
+  --vs-theme-color1: #70167e;
+  --vs-theme-color2: #d18109;
+  --vs-theme-color3: #a60c56;
+  --vs-theme-color4: #4f830e;
+  --vs-theme-color5: #f8931f;
+  --vs-title-color: #25283e;
+  --vs-text-color: #e1e1e1;
+  --vs-body-color: #5b5a7b;
+  --vs-smoke-color: #eff1f5;
+  --vs-black-color: #000000;
+  --vs-white-color: #ffffff;
+  --vs-yellow-color: #fec624;
+  --vs-success-color: #28a745;
+  --vs-error-color: #dc3545;
+  --vs-border-color: #e0e0e0;
+  --vs-title-font: 'Baloo 2', sans-serif;
+  --vs-body-font: 'Roboto', sans-serif;
+  --vs-special-font: 'Amatic SC', sans-serif;
+  --vs-icon-font: 'Font Awesome 6 Pro';
+  --vs-main-container: 1220px;
+  --vs-container-gutters: 30px;
+  --vs-section-space: 120px;
+  --vs-section-space-mobile: 80px;
+  --vs-section-title-space: 80px;
   --ripple-ani-duration: 5s;
 }
 
 // Color Variation
-$theme-color: var(--theme-color);
-$title-color: var(--title-color);
-$body-color: var(--body-color);
-$secondary-color: var(--smoke-color);
-$smoke-color: var(--smoke-color);
-$white-color: var(--white-color);
-$black-color: var(--black-color);
-$yellow-color: var(--yellow-color);
-$success-color: var(--success-color);
-$error-color: var(--error-color);
-$border-color: var(--border-color);
+$vs-theme-color1: var(--vs-theme-color1);
+$vs-theme-color2: var(--vs-theme-color2);
+$vs-theme-color3: var(--vs-theme-color3);
+$vs-theme-color4: var(--vs-theme-color4);
+$vs-theme-color5: var(--vs-theme-color5);
+$vs-main-container: var(--vs-main-container);
+$vs-title-color: var(--vs-title-color);
+$vs-body-color: var(--vs-body-color);
+$vs-smoke-color: var(--vs-smoke-color);
+$vs-white-color: var(--vs-white-color);
+$vs-black-color: var(--vs-black-color);
+$vs-yellow-color: var(--vs-yellow-color);
+$vs-success-color: var(--vs-success-color);
+$vs-error-color: var(--vs-error-color);
+$vs-border-color: var(--vs-border-color);
 
 // Font Variation
-$icon-font: var(--icon-font);
+$vs-icon-font: var(--vs-icon-font);
 
 // Typography
-$title-font: var(--title-font);
-$body-font: var(--body-font);
-$body-font-size: 16px;
-$body-line-Height: 26px;
-$body-font-weight: 400;
-$p-line-Height: 1.63;
+$vs-title-font: var(--vs-title-font) !default;
+$vs-body-font: var(--vs-body-font) !default;
+$vs-body-font-size: 16px;
+$vs-body-line-Height: 1.63;
+$vs-body-font-weight: 400;
+$vs-p-line-Height: 1.63;
+$vs-default-letter-spacing: 0.48px;
 
 // Device Variation
 $hd: 1921px; // Large Device Than 1920
@@ -58,22 +68,22 @@ $xs: 575px; // Extra Small Device
 $space-count: 6;
 
 // Section Space  For large Device
-$space: var(--section-space);
-$space-extra: calc(var(--section-space) - 30px);
+$space: var(--vs-section-space);
+$space-extra: calc(var(--vs-section-space) - 40px);
 
 // Section Space On small Device
-$space-mobile: var(--section-space-mobile);
-$space-mobile-extra: calc(var(--section-space-mobile) - 30px);
+$space-mobile: var(--vs-section-space-mobile);
+$space-mobile-extra: calc(var(--vs-section-space-mobile) - 30px);
 
 // BG Color Mapping
-$bgcolorMap: ();
+$bgcolorMap: () !default;
 $bgcolorMap: map-merge(
   (
-    "theme": $theme-color,
-    "smoke": $smoke-color,
-    "white": $white-color,
-    "black": $black-color,
-    "title": $title-color,
+    'theme': $vs-theme-color1,
+    'smoke': $vs-smoke-color,
+    'white': $vs-white-color,
+    'black': $vs-black-color,
+    'title': $vs-title-color,
   ),
   $bgcolorMap
 );
@@ -82,10 +92,10 @@ $bgcolorMap: map-merge(
 $overlaycolorMap: ();
 $overlaycolorMap: map-merge(
   (
-    "theme": $theme-color,
-    "title": $title-color,
-    "white": $white-color,
-    "black": $black-color,
+    'theme': $vs-theme-color1,
+    'title': $vs-title-color,
+    'white': $vs-white-color,
+    'black': $vs-black-color,
   ),
   $overlaycolorMap
 );
@@ -94,13 +104,13 @@ $overlaycolorMap: map-merge(
 $textColorsMap: ();
 $textColorsMap: map-merge(
   (
-    "theme": $theme-color,
-    "title": $title-color,
-    "body": $body-color,
-    "white": $white-color,
-    "yellow": $yellow-color,
-    "success": $success-color,
-    "error": $error-color,
+    'theme': $vs-theme-color1,
+    'title': $vs-title-color,
+    'body': $vs-body-color,
+    'white': $vs-white-color,
+    'yellow': $vs-yellow-color,
+    'success': $vs-success-color,
+    'error': $vs-error-color,
   ),
   $textColorsMap
 );
@@ -109,9 +119,9 @@ $textColorsMap: map-merge(
 $fontsMap: ();
 $fontsMap: map-merge(
   (
-    "icon": $icon-font,
-    "title": $title-font,
-    "body": $body-font,
+    'icon': $vs-icon-font,
+    'title': $vs-title-font,
+    'body': $vs-body-font,
   ),
   $fontsMap
 );

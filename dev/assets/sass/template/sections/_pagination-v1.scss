@@ -23,8 +23,8 @@
   span,
   a {
     display: inline-block;
-    font-family: $body-font;
-    color: $title-color;
+    font-family: $vs-body-font;
+    color: $vs-title-color;
     text-align: center;
     position: relative;
     border: none;
@@ -34,23 +34,21 @@
     font-weight: 400;
     font-size: 20px;
     z-index: 1;
-    background-color: #F5F9FF;
+    background-color: #f5f9ff;
     border-radius: 5px;
 
     &.active,
     &:hover {
-      color: $white-color;
-      background-color: $theme-color;
+      color: $vs-white-color;
+      background-color: $vs-theme-color1;
       box-shadow: none;
     }
   }
-
 }
 
-
 .post-pagination {
-  border-top: 1px solid #F0F0F0;
-  border-bottom: 1px solid #F0F0F0;
+  border-top: 1px solid #f0f0f0;
+  border-bottom: 1px solid #f0f0f0;
   padding: 30px 0;
   margin: 30px 0;
 }
@@ -59,14 +57,14 @@
   display: flex;
   align-items: center;
 
-  >a {
-    color: $title-color;
+  > a {
+    color: $vs-title-color;
     font-weight: 600;
     font-size: 16px;
-    font-family: $title-font;
+    font-family: $vs-title-font;
 
     &:hover {
-      color: $theme-color;
+      color: $vs-theme-color1;
     }
   }
 
@@ -77,7 +75,7 @@
 
   &.next {
     flex-direction: row-reverse;
-    
+
     img {
       margin-right: 0;
       margin-left: 25px;
@@ -86,14 +84,13 @@
 }
 
 .pagi-icon {
-  color: #F0F0F0;
+  color: #f0f0f0;
   font-size: 40px;
 }
 
-
 @include sm {
   .vs-pagination {
-    span, 
+    span,
     a {
       width: 35px;
       height: 35px;
@@ -103,12 +100,11 @@
     }
   }
 
-  
-  .post-pagi-box{
-    >a {
+  .post-pagi-box {
+    > a {
       font-size: 12px;
     }
-    
+
     img {
       width: 40px;
       margin-right: 15px;

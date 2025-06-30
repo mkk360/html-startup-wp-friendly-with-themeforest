@@ -5,10 +5,10 @@ blockquote {
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
-  font-family: $title-font;
-  color: $title-color;
-  background-color: var(--quote-bg, #EFF1F5);
-  border-left: 4px solid $theme-color;
+  font-family: $vs-title-font;
+  color: $vs-title-color;
+  background-color: var(--quote-bg, #eff1f5);
+  border-left: 4px solid $vs-theme-color1;
 
   padding: 43px 50px 42px 35px;
   margin: 35px 0;
@@ -25,18 +25,16 @@ blockquote {
 
   &:before {
     content: '\f10e';
-    font-family: $icon-font;
+    font-family: $vs-icon-font;
     position: absolute;
     right: 40px;
     bottom: 30px;
     font-size: 3.5rem;
     font-weight: 300;
     line-height: 1;
-    color: $theme-color;
+    color: $vs-theme-color1;
     opacity: 0.3;
   }
-
-
 
   p {
     margin-bottom: 0;
@@ -47,8 +45,8 @@ blockquote {
   }
 
   cite {
-    color: $theme-color;
-    font-family: $title-font;
+    color: $vs-theme-color1;
+    font-family: $vs-title-font;
     font-size: 18px;
     font-weight: 600;
     display: inline-block;
@@ -65,7 +63,7 @@ blockquote {
       bottom: 8px;
       width: 30px;
       height: 2px;
-      border-top: 2px solid $theme-color;
+      border-top: 2px solid $vs-theme-color1;
     }
   }
 }
@@ -73,7 +71,7 @@ blockquote {
 blockquote.vs-quote {
   text-align: center;
   padding: 40px 50px;
-  border-left: 2px solid $theme-color;
+  border-left: 2px solid $vs-theme-color1;
 
   &:before {
     position: relative;
@@ -85,22 +83,21 @@ blockquote.vs-quote {
     height: 80px;
     line-height: 80px;
     text-align: center;
-    background-color: $theme-color;
-    color: $white-color;
+    background-color: $vs-theme-color1;
+    color: $vs-white-color;
     font-size: 34px;
     display: inline-block;
     margin: 0 0 28px 0;
     border-radius: 50%;
-  } 
+  }
 
   p {
-
   }
 
   cite {
     padding: 0;
     margin-top: 23px;
-    
+
     &::before {
       display: none;
     }
@@ -109,21 +106,20 @@ blockquote.vs-quote {
   .quote-author {
     display: block;
     font-size: 14px;
-    color: #74787C;
-    font-family: $title-font;
+    color: #74787c;
+    font-family: $vs-title-font;
     display: block;
     font-weight: 400;
   }
 }
 
 .blog-meta {
-
   span,
   a {
     display: inline-block;
     margin-right: 16px;
     font-size: 16px;
-    color: #8B919C;
+    color: #8b919c;
 
     &:last-child {
       margin-right: 0;
@@ -131,32 +127,31 @@ blockquote.vs-quote {
 
     i {
       margin-right: 10px;
-      color: $theme-color;
+      color: $vs-theme-color1;
     }
   }
 
   a:hover {
-    color: $theme-color;
+    color: $vs-theme-color1;
   }
 }
-
 
 .blog-category {
   margin-bottom: -10px;
 
   a {
     display: inline-block;
-    color: $white-color;
+    color: $vs-white-color;
     padding: 4.5px 24.5px;
     margin-right: 5px;
     margin-bottom: 10px;
     border: 1px solid transparent;
-    background-color: $theme-color;
+    background-color: $vs-theme-color1;
 
     &:hover {
-      background-color: $white-color;
-      color: $body-color;
-      border-color: $theme-color;
+      background-color: $vs-white-color;
+      color: $vs-body-color;
+      border-color: $vs-theme-color1;
     }
   }
 }
@@ -166,7 +161,7 @@ blockquote.vs-quote {
     color: inherit;
 
     &:hover {
-      color: $theme-color;
+      color: $vs-theme-color1;
     }
   }
 }
@@ -175,18 +170,16 @@ blockquote.vs-quote {
   margin-bottom: 30px;
 }
 
-
 .blog-inner-title {
   font-size: 30px;
-  margin-top: -0.20em;
+  margin-top: -0.2em;
   margin-bottom: 8px;
 }
-
 
 .blog-single {
   position: relative;
   margin-bottom: 40px;
-  background: $white-color;
+  background: $vs-white-color;
   box-shadow: 0px 10px 31px rgba(169, 177, 193, 0.17);
   border-radius: 5px;
   padding: 00.1px 0 00.1px 0;
@@ -207,10 +200,10 @@ blockquote.vs-quote {
   }
 
   .blog-date {
-    color: $body-color;
+    color: $vs-body-color;
 
     i {
-      color: $theme-color;
+      color: $vs-theme-color1;
       margin: 0 10px 0 0;
     }
   }
@@ -218,8 +211,8 @@ blockquote.vs-quote {
   .share-links-title {
     font-size: 16px;
     font-weight: 600;
-    color: $title-color;
-    font-family: $title-font;
+    color: $vs-title-color;
+    font-family: $vs-title-font;
     margin: 0 15px 0 0;
     display: inline-block;
   }
@@ -239,7 +232,7 @@ blockquote.vs-quote {
     .tagcloud a {
       padding: 0;
       border-radius: 0;
-      color: $body-color;
+      color: $vs-body-color;
 
       &:not(:last-child):after {
         content: ',';
@@ -265,22 +258,23 @@ blockquote.vs-quote {
     a {
       line-height: 1;
       font-size: 16px;
-      color: $body-color;
+      color: $vs-body-color;
       text-align: center;
       display: block;
 
       &:hover {
-        color: $theme-color;
+        color: $vs-theme-color1;
       }
     }
   }
 
   .blog-content {
-    margin: var(--blog-space-y, 40px) var(--blog-space-x, 40px) var(--blog-space-y, 40px) var(--blog-space-x, 40px);
+    margin: var(--blog-space-y, 40px) var(--blog-space-x, 40px)
+      var(--blog-space-y, 40px) var(--blog-space-x, 40px);
     padding: 0;
     position: relative;
     border-radius: 0 0 5px 5px;
-  }  
+  }
 
   .blog-audio {
     line-height: 1;
@@ -289,36 +283,34 @@ blockquote.vs-quote {
   .blog-audio,
   .blog-img {
     position: relative;
-    background-color: $smoke-color;
+    background-color: $vs-smoke-color;
 
     img,
-    >* {
+    > * {
       border-radius: 5px 5px 0 0;
     }
   }
 
   .blog-img {
-
     .slick-arrow {
       --pos-x: 30px;
       border: none;
       width: 40px;
       height: 40px;
       line-height: 40px;
-      background-color: $theme-color;
-      color: $white-color;
+      background-color: $vs-theme-color1;
+      color: $vs-white-color;
       border-radius: 5px;
 
-
       &:hover {
-        background-color: $theme-color;
-        color: $white-color;
+        background-color: $vs-theme-color1;
+        color: $vs-white-color;
       }
     }
 
     .play-btn {
       --icon-size: 80px;
-      --icon-font-size: 24px;
+      --vs-icon-font-size: 24px;
       position: absolute;
       left: 50%;
       top: 50%;
@@ -337,12 +329,12 @@ blockquote.vs-quote {
 }
 
 .blog-author {
-  background-color: $smoke-color;
+  background-color: $vs-smoke-color;
   padding: 30px;
   display: flex;
   align-items: center;
   margin: var(--blog-space-y, 60px) 0;
-  
+
   .media-img {
     width: 189px;
     margin: 0 30px 0 0;
@@ -350,20 +342,18 @@ blockquote.vs-quote {
 
   .author-name {
     font-size: 24px;
-    font-weight: 700;    
+    font-weight: 700;
     margin: -0.3em 0 0px 0;
   }
 
   .author-degi {
-    color: $theme-color;    
+    color: $vs-theme-color1;
   }
 
   .author-text {
     margin: 0 0 -0.1em 0;
   }
-
 }
-
 
 .blog-details {
   .blog-single {
@@ -379,79 +369,76 @@ blockquote.vs-quote {
       border-radius: 0;
     }
   }
-  
+
   .blog-content {
     margin: 0;
   }
 }
 
-
 .blog-style1 {
-  background-color: $white-color;
+  background-color: $vs-white-color;
   box-shadow: 0px 10px 31px rgba(169, 177, 193, 0.07);
   border-radius: 5px;
-  
+
   .blog-meta {
     margin: 0 0 10px 0;
   }
-  
+
   .blog-content {
     padding: 35px 40px 33px 40px;
   }
 }
 
 .blog-style2 {
-  background-color: $white-color;
+  background-color: $vs-white-color;
   box-shadow: none;
-  
+
   .blog-meta {
     margin: 0 0 15px;
   }
-  
+
   .blog-text {
     margin: 0 0 20px 0;
   }
-  
+
   .blog-content {
-    border: 2px solid #ECF2FD;
+    border: 2px solid #ecf2fd;
     border-top: none;
     padding: 35px 40px 40px 40px;
   }
 }
 
 .blog-style3 {
-  
-  
   .blog-img {
     overflow: hidden;
     margin: -2px;
-    
+
     img {
       transform: scale(1);
       transition: all ease 0.4s;
     }
   }
-  
+
   .blog-body {
     border: 2px solid #f4f5f8;
   }
-  
+
   &:nth-child(odd) {
     .blog-body {
       display: flex;
       flex-direction: column-reverse;
     }
   }
-    
+
   .blog-content {
     padding: 35px 40px 30px 40px;
   }
 
   .blog-meta {
     margin-bottom: 15px;
-    
+
     i {
-      color: $body-color;
+      color: $vs-body-color;
     }
 
     a {
@@ -478,7 +465,6 @@ blockquote.vs-quote {
   .link-btn {
     text-transform: capitalize;
   }
-
 
   &:hover {
     .blog-img {
@@ -514,7 +500,7 @@ blockquote.vs-quote {
     margin-bottom: 4px;
 
     i {
-      color: $body-color;
+      color: $vs-body-color;
     }
 
     a {
@@ -536,7 +522,6 @@ blockquote.vs-quote {
     }
   }
 }
-
 
 @media (min-width: $lg) {
   .blog-style4-slider {
@@ -560,7 +545,7 @@ blockquote.vs-quote {
       font-size: 18px;
     }
   }
-} 
+}
 
 @include lg {
   blockquote {
@@ -578,7 +563,7 @@ blockquote.vs-quote {
 
     .blog-title {
       font-size: 24px;
-    }    
+    }
   }
 
   .blog-meta span,
@@ -592,7 +577,6 @@ blockquote.vs-quote {
     }
   }
 
-
   .blog-style4 {
     padding: 10px;
 
@@ -605,9 +589,7 @@ blockquote.vs-quote {
       font-size: 20px;
     }
   }
-  
 }
-
 
 @include sm {
   blockquote.vs-quote {
@@ -626,7 +608,7 @@ blockquote.vs-quote {
   .blog-inner-title {
     font-size: 26px;
   }
-  
+
   .blog-single {
     --blog-space-y: 40px;
     --blog-space-x: 20px;
@@ -637,8 +619,8 @@ blockquote.vs-quote {
 
     .blog-img .play-btn {
       --icon-size: 60px;
-      --icon-font-size: 20px;
-    }    
+      --vs-icon-font-size: 20px;
+    }
   }
 
   .blog-author {

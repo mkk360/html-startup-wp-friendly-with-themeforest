@@ -3,7 +3,7 @@
   top: 0;
   left: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.60);
+  background-color: rgba(0, 0, 0, 0.6);
   z-index: 999999;
   width: 0;
   width: 100%;
@@ -12,14 +12,13 @@
   opacity: 0;
   visibility: hidden;
 
-
   // Mobile Menu Logo
   .mobile-logo {
     padding-bottom: 30px;
     padding-top: 40px;
     display: block;
     text-align: center;
-    background-color: rgba(#1CB9C8, 0.1);
+    background-color: rgba(#1cb9c8, 0.1);
 
     svg {
       max-width: 185px;
@@ -43,8 +42,8 @@
     border-radius: 50%;
 
     &:hover {
-      background-color: $title-color;
-      color: $white-color;
+      background-color: $vs-title-color;
+      color: $vs-white-color;
     }
   }
 
@@ -52,7 +51,7 @@
     width: 100%;
     max-width: 310px;
     background-color: #fff;
-    border-right: 3px solid $theme-color;
+    border-right: 3px solid $vs-theme-color1;
     height: 100%;
     position: relative;
     left: -110%;
@@ -73,7 +72,6 @@
     }
   }
 }
-
 
 // Mobile Menu
 .vs-mobile-menu {
@@ -110,11 +108,11 @@
         line-height: 1;
         font-size: 16px;
         text-transform: capitalize;
-        color: $title-color;
+        color: $vs-title-color;
 
         &:before {
           content: '\f105';
-          font-family: $icon-font;
+          font-family: $vs-icon-font;
           position: relative;
           left: 0;
           top: 0;
@@ -124,8 +122,8 @@
       }
 
       &.vs-active {
-        >a {
-          color: $theme-color;
+        > a {
+          color: $vs-theme-color1;
 
           &:before {
             transform: rotate(90deg);
@@ -145,7 +143,7 @@
     }
 
     .vs-item-has-children {
-      >a {
+      > a {
         .vs-mean-expand {
           position: absolute;
           right: 0;
@@ -158,20 +156,20 @@
           margin-top: -12.5px;
           display: inline-block;
           text-align: center;
-          background-color: $smoke-color;
-          color: $title-color;
+          background-color: $vs-smoke-color;
+          color: $vs-title-color;
           box-shadow: 0 0 20px -8px rgba(#ad8858, 0.5);
           border-radius: 50%;
 
           &:before {
             content: '\f067';
-            font-family: $icon-font;
+            font-family: $vs-icon-font;
           }
         }
       }
 
       &.vs-active {
-        >a {
+        > a {
           .vs-mean-expand:before {
             content: '\f068';
           }
@@ -180,18 +178,16 @@
     }
   }
 
-  >ul {
+  > ul {
     padding: 0 40px;
 
-    >li {
+    > li {
       &:last-child {
         border-bottom: none;
       }
     }
   }
 }
-
-
 
 .vs-menu-toggle {
   width: 50px;
@@ -200,19 +196,18 @@
   font-size: 24px;
   border: none;
   display: inline-block;
-  background-color: #F2F6FF;
-  color: $theme-color;
+  background-color: #f2f6ff;
+  color: $vs-theme-color1;
   border-radius: 5px;
 
   &.style2 {
-    background-color: $theme-color;
+    background-color: $vs-theme-color1;
     border-radius: 50%;
-    color: $white-color;
+    color: $vs-white-color;
     width: 55px;
     height: 55px;
   }
 }
-
 
 @media (max-width: 400px) {
   .vs-menu-wrapper .vs-menu-area {
@@ -220,7 +215,7 @@
     max-width: 270px;
   }
 
-  .vs-mobile-menu>ul {
+  .vs-mobile-menu > ul {
     padding: 0 20px;
   }
 }

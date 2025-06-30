@@ -5,9 +5,9 @@
   .container-md,
   .container-sm,
   .container {
-    max-width: calc(var(--main-container) + var(--container-gutters));
-    padding-left: calc(var(--container-gutters) / 2);
-    padding-right: calc(var(--container-gutters) / 2);
+    max-width: calc(var(--vs-main-container) + var(--vs-container-gutters));
+    padding-left: calc(var(--vs-container-gutters) / 2);
+    padding-right: calc(var(--vs-container-gutters) / 2);
   }
 }
 
@@ -33,7 +33,7 @@
 }
 
 .container-style3 {
-  --main-container: 1445px;
+  --vs-main-container: 1445px;
 }
 
 @media (min-width: $xl) and (max-width: $hd) {
@@ -42,5 +42,11 @@
     overflow: hidden;
     margin-right: 0;
     padding-right: 0;
+  }
+}
+
+.container {
+  &--custom {
+    --vs-main-container: 1450px;
   }
 }

@@ -1,17 +1,17 @@
 .form-style1 {
-  background-color: $theme-color;
+  background-color: $vs-theme-color1;
   --bs-gutter-x: 20px;
   padding: 70px 80px 80px 80px;
 
   .form-title {
-    color: $white-color;
+    color: $vs-white-color;
     text-align: center;
     margin: 0 0 27px 0;
     padding: 0 0 17px 0;
     position: relative;
 
     &:before {
-      content: "";
+      content: '';
       position: absolute;
       bottom: 0;
       left: 0;
@@ -20,7 +20,7 @@
       height: 1px;
       border-radius: 5px;
       background-color: #0844bc;
-      background-color: $white-color;
+      background-color: $vs-white-color;
       opacity: 0.3;
     }
   }
@@ -32,10 +32,10 @@
   textarea,
   input {
     height: 55px;
-    background-color: $white-color;
+    background-color: $vs-white-color;
     font-size: 16px;
-    font-family: $body-font;
-    color: $body-color;
+    font-family: $vs-body-font;
+    color: $vs-body-color;
     border-radius: 5px;
   }
 

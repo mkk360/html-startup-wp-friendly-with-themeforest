@@ -7,7 +7,7 @@
 .text-inherit {
   color: inherit;
   &:hover {
-    color: $theme-color;
+    color: $vs-theme-color1;
   }
 }
 
@@ -18,6 +18,22 @@ a.text-theme,
   }
 }
 
-.text-light2 {
-  color: #919398;
+.vs-text-light {
+  color: var(--vs-text-color);
+}
+
+.text-theme-color1 {
+  color: $vs-theme-color1;
+}
+.text-theme-color2 {
+  color: $vs-theme-color2;
+}
+.text-theme-color3 {
+  color: $vs-theme-color3;
+}
+.text-theme-color4 {
+  color: $vs-theme-color4;
+}
+.text-theme-color5 {
+  color: $vs-theme-color5;
 }
